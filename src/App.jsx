@@ -1,11 +1,11 @@
 import HeroSection from "./Component/HeroSection";
 import List from "./Component/List";
 import Navbar from "./Component/Navbar";
-import { NavLink, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Favorite from "./pages/Favorite";
 import Billboard from "./Component/Billboard";
-import ProductsList from "./Component/ProductList";
 import CardDetails from "./pages/CardDetails";
+import Footer from "./Component/Footer";
 function App(){
   return(
     <div>
@@ -14,7 +14,7 @@ function App(){
           path="/"
           element={
             <>
-              <Navbar/> <HeroSection/> <List/> <Billboard/> <ProductsList/>
+              <Navbar/> <HeroSection/> <List/> <Billboard/> <Footer/>
             </>
           }
         />
