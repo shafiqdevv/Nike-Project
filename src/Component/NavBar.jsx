@@ -1,39 +1,52 @@
-import {LucideShoppingCart,Moon,Sun,} from "lucide-react";
-import SearchComponent from "./SearchComponent";
+import { Heart, Moon, Search, Sun } from "lucide-react";
+import { SiNike } from "react-icons/si";
+import { PiShoppingCartFill } from "react-icons/pi";
+import { motion } from "motion/react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import DropDowns from "./DropDowns";
-import { FaCartShopping } from "react-icons/fa6";
-import { FaMoon } from "react-icons/fa";
-function NavBar({ night, handleNight, countBuy,setSearch,search }) {
-  return (
-    <div id="navBar" className="flex justify-between py-2 px-6">
-      <div className="flex gap-5">
-        <img src="logo.svg" alt="logo" className="w-10 rounded-full"/>
-        <div className="flex gap-5 items-center">
-          <NavLink to={'/'} className={'text-sm hover:text-gray-500 active:scale-105 duration-200'}>Home</NavLink>
-          <a href="about" className={'text-sm hover:text-gray-500 active:scale-105 duration-200'}>About</a>
-          <a href="services" className={'text-sm hover:text-gray-500 active:scale-105 duration-200'}>Services</a>
-          <a href="blog" className={'text-sm hover:text-gray-500 active:scale-105 duration-200'}>Blog</a>
-          <DropDowns night={night}/>
-        </div>
-      </div>
-      <div className=" flex gap-4 items-center">
-        <SearchComponent night={night} search={search} setSearch={setSearch}/>
-        <NavLink to={'/cart'} className="relative p-3">
-          <FaCartShopping className={`text-xl`}/>
-          {countBuy > 0 && (
-            <div className="w-3 h-3 bg-red-500 text-white rounded-full absolute top-1 right-1 flex items-center justify-center text-xs">
-              {countBuy}
-            </div>
-          )}
-        </NavLink>
-        {night  
-              ? <Sun size={20} onClick={handleNight} strokeWidth={1.3} className="cursor-pointer active:rotate-180 transition duration-500"/>
-              : <FaMoon size={20}  onClick={handleNight} className="cursor-pointer active:rotate-180 transition duration-500"/>
-        }
-        <NavLink to={'/loginForm'} className="bg-[#f42c37] text-sm text-white rounded-2xl px-2 cursor-pointer">Login</NavLink>
-      </div>
-    </div>
-  );
+function Navbar(){
+    const [isNight, setIsNight] = useState(false);
+    function handleNight(){
+        setIsNight(prev => !prev)
+    }
+    return(
+        <nav className="w-full flex justify-between px-10 fixed z-100">
+            {/* logo */}
+            <motion.div initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} transition={{duration: 0.6}}>
+                <SiNike size={40}/>
+            </motion.div>
+            {/* main menu */}
+            <motion.div
+                initial={{opacity: 0, y: -100}} animate={{opacity: 1, y: 0}} transition={{duration: 0.6}}
+            className="flex gap-5 items-center bg-black/80 text-white px-2 rounded-full shadow-[0_0_15px_rgba(0,0,0,0.3)]">
+                <a href="#">Man</a>
+                <a href="#">Women</a>
+                <a href="#">Collection</a>
+                <a href="#">Sale</a>
+            </motion.div>
+            {/* icons */}
+            <motion.div
+                initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} transition={{delay: 0.4}}
+            className="flex gap-5 items-center">
+                <motion.div initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}}>
+                    <Search size={25} color="white" className="z-200 cursor-pointer hover:translate-y-[1px] transition duration-200 bg-black/80 p-1 shadow-[0_0_15px_rgba(0,0,0,0.3)] rounded-full"/>
+                </motion.div>
+                <motion.div initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}}>
+                    <PiShoppingCartFill color="white" size={25} className="z-200 cursor-pointer hover:translate-y-[1px] transition duration-200 bg-black/80 p-1 shadow-[0_0_15px_rgba(0,0,0,0.3)] rounded-full"/>
+                </motion.div>
+                <motion.div initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}}>
+                    <NavLink to={'/favorite'}>
+                        <Heart color="white" size={25} className="z-200 cursor-pointer hover:translate-y-[1px] transition duration-200 bg-black/80 p-1 shadow-[0_0_15px_rgba(0,0,0,0.3)] rounded-full"/>
+                    </NavLink>
+                </motion.div>
+                <motion.div initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}}>
+                    {isNight 
+                        ? <Moon onClick={handleNight} color="white" size={25} className="z-200 cursor-pointer hover:translate-y-[1px] active:rotate-90 transition duration-200 bg-black/80 p-1 shadow-[0_0_15px_rgba(0,0,0,0.3)] rounded-full"/>
+                        : <Sun  onClick={handleNight} color="white" size={25} className="z-200 cursor-pointer hover:translate-y-[1px] active:rotate-90 transition duration-200 bg-black/80 p-1 shadow-[0_0_15px_rgba(0,0,0,0.3)] rounded-full"/>
+                    }
+                </motion.div>
+            </motion.div>
+        </nav>
+    )
 }
-export default NavBar;
+export default Navbar;
