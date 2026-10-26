@@ -131,3 +131,131 @@ function Footer() {
 }
 
 export default Footer;
+// import React from 'react';
+// import { Facebook, Twitter, Instagram, Github, Youtube } from reactic
+// const Facebook = ''
+
+// export default function Footer() {
+//   const currentYear = new Date().getFullYear();
+
+//   const footerLinks = [
+//     {
+//       title: 'Solutions',
+//       links: ['Marketing', 'Analytics', 'Commerce', 'Insights'],
+//     },
+//     {
+//       title: 'Support',
+//       links: ['Pricing', 'Documentation', 'Guides', 'API Status'],
+//     },
+//     {
+//       title: 'Company',
+//       links: ['About', 'Blog', 'Jobs', 'Press', 'Partners'],
+//     },
+//     {
+//       title: 'Legal',
+//       links: ['Claim', 'Privacy', 'Terms'],
+//     },
+//   ];
+
+//   const socialLinks = [
+//     { icon: Facebook, href: '#', label: 'Facebook' },
+//     { icon: Instagram, href: '#', label: 'Instagram' },
+//     { icon: Twitter, href: '#', label: 'Twitter' },
+//     { icon: Github, href: '#', label: 'GitHub' },
+//     { icon: Youtube, href: '#', label: 'YouTube' },
+//   ];
+
+//   return (
+//     <footer className="bg-gray-900 text-gray-300">
+//       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+//         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+//           {/* Brand & Newsletter Section */}
+//           <div className="space-y-8 xl:col-span-1">
+//             <span className="text-xl font-bold text-white tracking-wide">BRANDLOGO</span>
+//             <p className="text-sm leading-6 text-gray-400 max-w-xs">
+//               Making the world a better place through constructing elegant hierarchies.
+//             </p>
+//             <div className="flex space-x-6">
+//               {socialLinks.map((item, index) => {
+//                 const Icon = item.icon;
+//                 return (
+//                   <a key={index} href={item.href} className="text-gray-500 hover:text-gray-400">
+//                     <span className="sr-only">{item.label}</span>
+//                     <Icon className="h-6 w-6" aria-hidden="true" />
+//                   </a>
+//                 );
+//               })}
+//             </div>
+//           </div>
+
+//           {/* Navigation Links Grid */}
+//           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+//             <div className="md:grid md:grid-cols-2 md:gap-8">
+//               <div>
+//                 <h3 className="text-sm font-semibold leading-6 text-white">{footerLinks[0].title}</h3>
+//                 <ul role="list" className="mt-6 space-y-4">
+//                   {footerLinks[0].links.map((item) => (
+//                     <li key={item}>
+//                       <a href="#" className="text-sm leading-6 text-gray-400 hover:text-white transition-colors">
+//                         {item}
+//                       </a>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//               <div className="mt-10 md:mt-0">
+//                 <h3 className="text-sm font-semibold leading-6 text-white">{footerLinks[1].title}</h3>
+//                 <ul role="list" className="mt-6 space-y-4">
+//                   {footerLinks[1].links.map((item) => (
+//                     <li key={item}>
+//                       <a href="#" className="text-sm leading-6 text-gray-400 hover:text-white transition-colors">
+//                         {item}
+//                       </a>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             </div>
+//             <div className="md:grid md:grid-cols-2 md:gap-8">
+//               <div>
+//                 <h3 className="text-sm font-semibold leading-6 text-white">{footerLinks[2].title}</h3>
+//                 <ul role="list" className="mt-6 space-y-4">
+//                   {footerLinks[2].links.map((item) => (
+//                     <li key={item}>
+//                       <a href="#" className="text-sm leading-6 text-gray-400 hover:text-white transition-colors">
+//                         {item}
+//                       </a>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//               <div className="mt-10 md:mt-0">
+//                 <h3 className="text-sm font-semibold leading-6 text-white">{footerLinks[3].title}</h3>
+//                 <ul role="list" className="mt-6 space-y-4">
+//                   {footerLinks[3].links.map((item) => (
+//                     <li key={item}>
+//                       <a href="#" className="text-sm leading-6 text-gray-400 hover:text-white transition-colors">
+//                         {item}
+//                       </a>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Bottom Copyright Row */}
+//         <div className="mt-16 border-t border-gray-800 pt-8 sm:mt-20 lg:mt-24 flex flex-col md:flex-row justify-between items-center gap-4">
+//           <p className="text-xs leading-5 text-gray-400">
+//             &copy; {currentYear} BRANDLOGO Inc. All rights reserved.
+//           </p>
+//           <div className="flex gap-6 text-xs text-gray-400">
+//             <a href="#" className="hover:text-white">Privacy Policy</a>
+//             <a href="#" className="hover:text-white">Terms of Service</a>
+//           </div>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
