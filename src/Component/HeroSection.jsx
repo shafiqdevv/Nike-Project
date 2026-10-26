@@ -32,7 +32,7 @@ function HeroSection(){
                 {/* text */}
                 <div className="flex gap-2 z-2 ml-20">
                     <p className="[writing-mode:vertical-rl] rotate-360">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</p>
-                    <h1 className="[writing-mode:vertical-rl] rotate-180 font-extrabold opacity-90 text-9xl flex gap-2">
+                    <h1 className="font-michroma [writing-mode:vertical-rl] rotate-180 font-extrabold opacity-90 text-9xl flex gap-2">
                         <span className="[writing-mode:horizontal-tb] rotate-180 font-bold text-[12px] max-w-60">{activeHero.description}</span>
                         <span className="[writing-mode:horizontal-tb] rotate-180 font-bold text-[20px]">{activeHero.name}</span>
                         NIKE
