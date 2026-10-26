@@ -8,14 +8,14 @@ import { SiNike } from "react-icons/si";
 
 function Footer() {
   return (
-    <footer className="relative bg-black text-white overflow-hidden">
+    <footer className="relative bg-black text-white overflow-hidden h-70">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-[url('/footer.jpg')] bg-cover bg-center"
+        className="absolute inset-0 bg-[url('/foote.png')] bg-cover bg-center"
       />
-
+      <img src="footer.png" alt="" className="absolute"/>
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/75" />
+      <div className="absolute inset-0 bgblack/75" />
 
       {/* Footer Content */}
       <div className="relative z-10 px-6 md:px-16 lg:px-24 pt-16 pb-8">
