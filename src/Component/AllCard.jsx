@@ -4,7 +4,7 @@ import { AiFillEdit } from "react-icons/ai";
 import { BsHeartFill, BsStarFill } from "react-icons/bs";
 import { FaCartShopping } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
-
+import { motion } from "motion/react";
 function AllCard({product}){
     const [isHover, SetIsHover] = useState(false);
     function handleHover(){
@@ -30,7 +30,11 @@ function AllCard({product}){
         SetIsHoverStar(false);
     }
     return(
-        <div onMouseEnter={handleHover} onMouseLeave={handleHoverOff} className="w-45 h-70 grid grid-cols-1 gap-5 bg-white rounded-2xl shadow-[5px_5px_5px_1px_#d0d0d0] hover:scale-115 hover:p-2 hover:bg-green-900 duration-300 p-2 md:p-4 lg:p-5">
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        onMouseEnter={handleHover} onMouseLeave={handleHoverOff} className="w-45 h-70 grid grid-cols-1 gap-5 bg-white rounded-2xl shadow-[5px_5px_5px_1px_#d0d0d0] hover:scale-115 hover:p-2 hover:bg-green-900 duration-300 p-2 md:p-4 lg:p-5">
             <img src={product.imgSrc} alt="" className="w-30 drop-shadow-[0_25px_15px_rgb(0,0,0)]"/>
             {!isHover ? 
                 (<div className="flex flex-col itemscenter justifycenter ">
@@ -74,7 +78,7 @@ function AllCard({product}){
                 </div>
                 )
             }
-        </div>
+        </motion.div>
     )
 }
 export default AllCard;

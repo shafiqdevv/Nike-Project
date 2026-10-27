@@ -7,7 +7,6 @@ import Billboard from "./Component/Billboard";
 import CardDetails from "./pages/CardDetails";
 import Footer from "./Component/Footer";
 import AllProductsList from "./Component/AllProductsList";
-import { SlideTabsExample } from "./Component/CopyPast";
 function App(){
   return(
     <div>
@@ -16,7 +15,7 @@ function App(){
           path="/"
           element={
             <>
-              <Navbar/> <HeroSection/> <List/> <Billboard/> <AllProductsList/> <Footer/> <SlideTabsExample/>
+              <Navbar/> <HeroSection/> <List/> <AllProductsList/> <Footer/>
             </>
           }
         />

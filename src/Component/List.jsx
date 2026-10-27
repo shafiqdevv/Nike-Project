@@ -2,10 +2,7 @@
 import { useState } from "react";
 import { data } from "../data/data";
 import Card from "./Card";
-import { motion } from "motion/react";
 import CategoryBTN from "./CategoryBTN.jsx";
-import { SlideTabsExample } from "./CopyPast.jsx";
-
 function List() {
   const [category, setCategory] = useState("new");
   // Store the selected variant separately for each card

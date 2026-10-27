@@ -10,7 +10,7 @@ function Navbar(){
         setIsNight(prev => !prev)
     }
     return(
-        <nav className="w-full flex justify-between px-10 fixed z-100">
+        <nav className="w-full flex justify-between px-10 z-100">
             {/* logo */}
             <motion.div initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} transition={{duration: 0.6}}>
                 <SiNike size={40}/>
