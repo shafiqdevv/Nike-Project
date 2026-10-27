@@ -7,7 +7,7 @@ import "swiper/css";
 import { motion } from "motion/react";
 import { data } from "../data/data";
 
-function Card({ card, selectedVariantId, setActiveId, setIsClicked }) {
+function Card({ card, selectedVariantId, setActiveId }) {
   // Find the selected variant
   const selectedHero = data.find(
     (hero) => hero.id === selectedVariantId
@@ -21,16 +21,16 @@ function Card({ card, selectedVariantId, setActiveId, setIsClicked }) {
   return (
     <div className="overflow-hidden">
       <motion.div 
-        initial={{ opacity: 0, x: 150 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="flex flex-col gap-1 overflow-hidden"
+        className="flex flex-col gap-1 overflowhidden"
       >
         <div className="flex gap-1">
-          <div onClick={() => setIsClicked(prev => !prev)}
-            className={`bg-gradient-to-l from-gray-500 to-gray-400 relative flex h-50 w-70 flex-col items-end justify-end gap-7 overflow-hidden rounded-lg p-5 shadow-xl transition-colors duration-500`}
+          <div
+            className={`bg-white relative flex h-50 w-70 flex-col items-end justify-end gap-7 overflow-hidden rounded-lg p-5 shadow-[5px_5px_5px_1px_#d0d0d0] transition-colors duration-500`}
           >
-            <img
+            <motion.img initial={{ opacity: 0, y: 50 }} animate={{opacity:1,y:0}}
               src={displayedCard.imgSRC}
               alt={displayedCard.name} className={`${displayedCard.w} absolute left-0 top-0 z-[2] drop-shadow-[0_25px_15px_rgb(0,0,0)]`}/>
             <p className="z-[2] text-lg font-bold">{displayedCard.name}</p>

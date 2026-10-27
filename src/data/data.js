@@ -41,10 +41,30 @@ export const data = [
     w: "w-30",
     category: "new",
   },
+  {
+    id: 5,
+    name: "Air Jordan 1",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imgSRC: "/nike1 (3).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-red-800",
+    w: "w-30",
+    category: "new",
+  },
+  {
+    id: 6,
+    name: "Air Jordan",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imgSRC: "/nike1 (4).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-blue-600",
+    w: "w-30",
+    category: "new",
+  },
 
   // MAN
   {
-    id: 5,
+    id: 1,
     name: "Air Jordan Fonex",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imgSRC: "/nike1 (2).png",
@@ -54,7 +74,7 @@ export const data = [
     category: "man",
   },
   {
-    id: 6,
+    id: 2,
     name: "Air Jordan 1 Zoo",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imgSRC: "/nike1 (1).png",
@@ -64,7 +84,7 @@ export const data = [
     category: "man",
   },
   {
-    id: 7,
+    id: 3,
     name: "Air Jordan 1",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imgSRC: "/nike1 (3).png",
@@ -74,7 +94,27 @@ export const data = [
     category: "man",
   },
   {
-    id: 8,
+    id: 4,
+    name: "Air Jordan",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imgSRC: "/nike1 (4).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-blue-600",
+    w: "w-30",
+    category: "man",
+  },
+  {
+    id: 5,
+    name: "Air Jordan 1",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imgSRC: "/nike1 (3).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-red-800",
+    w: "w-30",
+    category: "man",
+  },
+  {
+    id: 6,
     name: "Air Jordan",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imgSRC: "/nike1 (4).png",
@@ -86,7 +126,7 @@ export const data = [
 
   // WOMEN
   {
-    id: 9,
+    id: 1,
     name: "Air Jordan 1 Zoom",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imgSRC: "/nike1 (2).png",
@@ -96,7 +136,7 @@ export const data = [
     category: "women",
   },
   {
-    id: 10,
+    id: 2,
     name: "Air Jordan 1 Zoo",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imgSRC: "/nike1 (1).png",
@@ -106,7 +146,7 @@ export const data = [
     category: "women",
   },
   {
-    id: 11,
+    id: 3,
     name: "Air Jordan 1",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imgSRC: "/nike1 (3).png",
@@ -116,7 +156,27 @@ export const data = [
     category: "women",
   },
   {
-    id: 12,
+    id: 4,
+    name: "Air Jordan",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imgSRC: "/nike1 (4).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-blue-600",
+    w: "w-30",
+    category: "women",
+  },
+  {
+    id: 5,
+    name: "Air Jordan 1",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    imgSRC: "/nike1 (3).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-red-800",
+    w: "w-30",
+    category: "women",
+  },
+  {
+    id: 6,
     name: "Air Jordan",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     imgSRC: "/nike1 (4).png",
@@ -128,7 +188,7 @@ export const data = [
 
   // CHILD
   {
-    id: 13,
+    id: 1,
     name: "Kids Air Jordan Green",
     description: "Comfortable sneakers for kids.",
     imgSRC: "/nike1 (2).png",
@@ -138,7 +198,7 @@ export const data = [
     category: "child",
   },
   {
-    id: 14,
+    id: 2,
     name: "Kids Air Jordan Orange",
     description: "Stylish sneakers for kids.",
     imgSRC: "/nike1 (1).png",
@@ -148,7 +208,7 @@ export const data = [
     category: "child",
   },
   {
-    id: 15,
+    id: 3,
     name: "Kids Air Jordan Red",
     description: "Sporty sneakers for kids.",
     imgSRC: "/nike1 (3).png",
@@ -158,7 +218,27 @@ export const data = [
     category: "child",
   },
   {
-    id: 16,
+    id: 4,
+    name: "Kids Air Jordan Blue",
+    description: "Everyday sneakers for kids.",
+    imgSRC: "/nike1 (4).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-blue-600",
+    w: "w-30",
+    category: "child",
+  },
+  {
+    id: 5,
+    name: "Kids Air Jordan Red",
+    description: "Sporty sneakers for kids.",
+    imgSRC: "/nike1 (3).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-red-800",
+    w: "w-30",
+    category: "child",
+  },
+  {
+    id: 6,
     name: "Kids Air Jordan Blue",
     description: "Everyday sneakers for kids.",
     imgSRC: "/nike1 (4).png",
@@ -170,7 +250,7 @@ export const data = [
 
   // TEENAGER
   {
-    id: 17,
+    id: 1,
     name: "Teen Air Jordan Green",
     description: "Modern sneakers for teenagers.",
     imgSRC: "/nike1 (2).png",
@@ -180,7 +260,7 @@ export const data = [
     category: "teenager",
   },
   {
-    id: 18,
+    id: 2,
     name: "Teen Air Jordan Orange",
     description: "Trendy sneakers for teenagers.",
     imgSRC: "/nike1 (1).png",
@@ -190,7 +270,7 @@ export const data = [
     category: "teenager",
   },
   {
-    id: 19,
+    id: 3,
     name: "Teen Air Jordan Red",
     description: "Sporty sneakers for teenagers.",
     imgSRC: "/nike1 (3).png",
@@ -200,7 +280,27 @@ export const data = [
     category: "teenager",
   },
   {
-    id: 20,
+    id: 4,
+    name: "Teen Air Jordan Blue",
+    description: "Casual sneakers for teenagers.",
+    imgSRC: "/nike1 (4).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-blue-600",
+    w: "w-30",
+    category: "teenager",
+  },
+  {
+    id: 5,
+    name: "Teen Air Jordan Red",
+    description: "Sporty sneakers for teenagers.",
+    imgSRC: "/nike1 (3).png",
+    leftSectionBgColor: "bg-gray-200",
+    rightSectionBgColor: "bg-red-800",
+    w: "w-30",
+    category: "teenager",
+  },
+  {
+    id: 6,
     name: "Teen Air Jordan Blue",
     description: "Casual sneakers for teenagers.",
     imgSRC: "/nike1 (4).png",

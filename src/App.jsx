@@ -6,6 +6,7 @@ import Favorite from "./pages/Favorite";
 import Billboard from "./Component/Billboard";
 import CardDetails from "./pages/CardDetails";
 import Footer from "./Component/Footer";
+import AllProductsList from "./Component/AllProductsList";
 function App(){
   return(
     <div>
@@ -14,7 +15,7 @@ function App(){
           path="/"
           element={
             <>
-              <Navbar/> <HeroSection/> <List/> <Billboard/> <Footer/>
+              <Navbar/> <HeroSection/> <List/> <Billboard/> <AllProductsList/> <Footer/>
             </>
           }
         />
