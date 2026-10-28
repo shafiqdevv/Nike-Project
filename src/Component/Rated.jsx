@@ -32,12 +32,14 @@ function Rated(){
                     <div className={`w-70`}>
                         <div className="flex z-2 flex-col gap-3">
                            <div className="flex gap-1">
-                               <div className="bg-white w-10 h-10 p-2 border-1 rounded-full flex flex-col gap-2 items-center">
+                               <div className="flex flex-col items-center">
+                                <div className="bg-white w-10 h-10 p-2 border-1 rounded-full flex flex-col gap-2 items-center">
                                    <img src={rate.imgSrc} alt="" />
-                                   <p className="font-bold text-xs">{rate.name}</p>
+                               </div>
+                               <p className="font-bold text-xs dark:text-white">{rate.name}</p>
                                </div>
                                <div className="flex items-center">
-                                   <p className="text-xs max-w-60">{rate.oponion}</p>
+                                   <p className="text-xs max-w-60 dark:text-white">{rate.oponion}</p>
                                </div>
                            </div>
                         </div>

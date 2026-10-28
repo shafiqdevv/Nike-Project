@@ -34,11 +34,14 @@ function AllCard({product}){
             initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        onMouseEnter={handleHover} onMouseLeave={handleHoverOff} className="w-45 h-70 grid grid-cols-1 gap-5 bg-white rounded-2xl shadow-[5px_5px_5px_1px_#d0d0d0] hover:scale-115 hover:p-2 hover:bg-green-900 duration-300 p-2 md:p-4 lg:p-5">
+        onMouseEnter={handleHover} onMouseLeave={handleHoverOff} className="w-45 h-70 grid grid-cols-1 gap-5 dark:bg-gray-700 rounded-2xl shadow-[5px_5px_5px_1px_#d0d0d0] dark:shadow-[5px_5px_5px_1px_black] hover:scale-115 hover:p-2 hover:bg-green-900 duration-300 p-2 md:p-4 lg:p-5 z-2">
             <img src={product.imgSrc} alt="" className="w-30 drop-shadow-[0_25px_15px_rgb(0,0,0)]"/>
             {!isHover ? 
-                (<div className="flex flex-col itemscenter justifycenter ">
-                    <p className="font-bold font-michroma uppercase">{product.name}</p>
+                (<div className="flex flex-col gap-2">
+                    <div className="flex items-end">
+                        <p className="font-bold font-michroma uppercase dark:text-white">{product.name}</p>
+                        <p className="flex gap-1 items-center justify-center bg-green-900 rounded-3xl text-white text-xs px-2 py-1">{product.rate}<BsStarFill size={10}/> </p>
+                    </div>
                     <div className="">
                         <strong className="text-green-600">${product.price} </strong>
                         <del className="text-xs font-bold text-gray-500">${product.oldPrice}</del>
@@ -47,8 +50,8 @@ function AllCard({product}){
                 )
                 :
                 (
-                <div className="flex gap-2 flex-col items-center justify-center py-3 bg-white rounded-3xl">
-                    <p className="text-sm font-bold font-michroma uppercase">{product.name}</p>
+                <div className="flex gap-2 flex-col items-center justify-center py-3 dark:bg-gray-900 dark:text-white rounded-3xl">
+                    <p className="text-sm bgred-600 text-center font-bold font-michroma uppercase">{product.name}</p>
                     <div className="flex gap-5">
                         <div>
                             <strong className="text-green-600">${product.price} </strong>
@@ -82,3 +85,4 @@ function AllCard({product}){
     )
 }
 export default AllCard;
+// #8c8484

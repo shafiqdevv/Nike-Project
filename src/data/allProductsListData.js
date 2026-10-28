@@ -5,7 +5,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez all black.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.5
     },
     {
         id:2,
@@ -13,7 +14,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez grey white.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.7
     },
     {
         id:3,
@@ -21,14 +23,16 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez navy white.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.2
     },{
         id:4,
         name:'cortez sail beige',
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez sail beige.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.3
     },
     {
         id:5,
@@ -36,7 +40,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white black.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.1
     },
     {
         id:6,
@@ -44,7 +49,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white blue.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.4
     },
     {
         id:7,
@@ -52,7 +58,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white green.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.6
     },
     {
         id:8,
@@ -60,7 +67,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white red.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.5
     },
     {
         id:9,
@@ -68,7 +76,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez navy white.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.3
     },
     {
         id:10,
@@ -76,7 +85,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white green.png',
-        category:'Nike Air Force'
+        category:'Nike Air Force',
+        rate:4.4
     },
     {
         id:1,
@@ -84,7 +94,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez all black.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:3.9
     },
     {
         id:2,
@@ -92,7 +103,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez grey white.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.7
     },
     {
         id:3,
@@ -100,14 +112,16 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez navy white.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.8
     },{
         id:4,
         name:'cortez sail beige',
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez sail beige.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.6
     },
     {
         id:5,
@@ -115,7 +129,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white black.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.7
     },
     {
         id:6,
@@ -123,7 +138,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white blue.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.8
     },
     {
         id:7,
@@ -131,7 +147,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white green.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.8
     },
     {
         id:8,
@@ -139,7 +156,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white red.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.9
     },
     {
         id:9,
@@ -147,7 +165,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez navy white.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.7
     },
     {
         id:10,
@@ -155,7 +174,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white green.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.9
     },
     {
         id:1,
@@ -163,7 +183,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez all black.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.8
     },
     {
         id:2,
@@ -171,7 +192,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez grey white.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.6
     },
     {
         id:3,
@@ -179,14 +201,16 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez navy white.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.5
     },{
         id:4,
         name:'cortez sail beige',
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez sail beige.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.6
     },
     {
         id:5,
@@ -194,7 +218,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white black.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.4
     },
     {
         id:6,
@@ -202,7 +227,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white blue.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.8
     },
     {
         id:7,
@@ -210,7 +236,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white green.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.6
     },
     {
         id:8,
@@ -218,7 +245,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white red.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.8
     },
     {
         id:9,
@@ -226,7 +254,8 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez navy white.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.7
     },
     {
         id:10,
@@ -234,6 +263,7 @@ export const products = [
         price:'250',
         oldPrice:'300',
         imgSrc:'../../public/Nike Air Force/cortez white green.png',
-        category:'Nike Air Max'
+        category:'Nike Air Max',
+        rate:4.8
     },
 ]

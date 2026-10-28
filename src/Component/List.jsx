@@ -20,9 +20,10 @@ function List() {
     return category === "" || product.category === category;
   });
   return (
-    <div className="flex flex-col min-h-screen pt-5 flex items-center justify-center bg-neutral-100">
-      {/* <SlideTabsExample setCategory={setCategory}/> */}
-      <CategoryBTN/>
+    <div className="flex flex-col min-h-screen pt-5 flex items-center justify-center">
+      <div className="dark:bg-gray-700 w-full">
+        <CategoryBTN setCategory={setCategory}/>
+      </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 p-5">
         {filteredProducts.map((card) => (
           <Card

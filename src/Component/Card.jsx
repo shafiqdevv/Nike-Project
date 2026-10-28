@@ -24,11 +24,11 @@ function Card({ card, selectedVariantId, setActiveId }) {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="flex flex-col gap-1 overflowhidden"
+        className="flex flex-col gap-1"
       >
         <div className="flex gap-1">
           <div
-            className={`bg-white relative flex h-50 w-70 flex-col items-end justify-end gap-7 overflow-hidden rounded-lg p-5 shadow-[5px_5px_5px_1px_#d0d0d0] transition-colors duration-500`}
+            className={`bg-gray-700 relative flex h-50 w-70 flex-col items-end justify-end gap-7 overflow-hidden rounded-lg p-5 transition-colors duration-500`}
           >
             <motion.img initial={{ opacity: 0, y: 50 }} animate={{opacity:1,y:0}}
               src={displayedCard.imgSRC}

@@ -164,11 +164,11 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="mx-auto max-w-7xl p-6 lg:px-8">
+    <footer className="dark:bg-gray-700 dark:text-white z-2">
+      <div className="mx-auto max-w-7xl p-3 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           {/* Brand & Newsletter Section */}
-          <div className="space-y-8 xl:col-span-1">
+          <div className="space-y-3 xl:col-span-1">
             <span className="text-xl font-bold text-white tracking-wide">BRANDLOGO</span>
             <p className="text-sm leading-6 text-gray-400 max-w-xs">
               Making the world a better place through constructing elegant hierarchies.
@@ -187,11 +187,11 @@ export default function Footer() {
           </div>
 
           {/* Navigation Links Grid */}
-          <div className="mt-5 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div className="mt-3 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">{footerLinks[0].title}</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <h3 className="text-sm font-semibold mt-5 text-white">{footerLinks[0].title}</h3>
+                <ul role="list" className="mt-2 space-y-1">
                   {footerLinks[0].links.map((item) => (
                     <li key={item}>
                       <a href="#" className="text-sm leading-6 text-gray-400 hover:text-white transition-colors">
@@ -202,8 +202,8 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">{footerLinks[1].title}</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <h3 className="text-sm font-semibold mt-5 text-white">{footerLinks[1].title}</h3>
+                <ul role="list" className="mt-2 space-y-1">
                   {footerLinks[1].links.map((item) => (
                     <li key={item}>
                       <a href="#" className="text-sm leading-6 text-gray-400 hover:text-white transition-colors">
@@ -216,8 +216,8 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">{footerLinks[2].title}</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <h3 className="text-sm font-semibold mt-5 text-white">{footerLinks[2].title}</h3>
+                <ul role="list" className="mt-2 space-y-1">
                   {footerLinks[2].links.map((item) => (
                     <li key={item}>
                       <a href="#" className="text-sm leading-6 text-gray-400 hover:text-white transition-colors">
@@ -228,8 +228,8 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">{footerLinks[3].title}</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <h3 className="text-sm font-semibold mt-5 text-white">{footerLinks[3].title}</h3>
+                <ul role="list" className="mt-2 space-y-1">
                   {footerLinks[3].links.map((item) => (
                     <li key={item}>
                       <a href="#" className="text-sm leading-6 text-gray-400 hover:text-white transition-colors">
@@ -244,14 +244,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright Row */}
-        <div className="mt-5 border-t border-gray-800 pt-8 sm:mt-20 lg:mt-2 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs leading-5 text-gray-400">
+        <div className="border-t-2 pt-1 border-gray-800 sm:mt-20 lg:mt-2 flex flex-col justify-center items-center gap-1">
+          <div className="flex gap-3 text-sm text-gray-400">
+            <a href="#" className="hover:text-white underline">Privacy Policy</a>
+            <a href="#" className="hover:text-white underline">Terms of Service</a>
+          </div>
+          <p className="text-sm text-gray-400">
             &copy; {currentYear} BRANDLOGO Inc. All rights reserved.
           </p>
-          <div className="flex gap-6 text-xs text-gray-400">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms of Service</a>
-          </div>
         </div>
       </div>
     </footer>
